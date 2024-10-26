@@ -1,22 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web BLE Robot Control</title>
-</head>
-<body>
-    <div class="buttons">
-        <button id="connect">Connect</button>
-    </div>
+<!--clear button -->
 
-    <div id="terminal">
-        <div>
-            <input type="text" id="message-input">
-            <button id="send">Send message</button>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web BLE Robot Control</title>
+    </head>
+    <body>
+        <div class="buttons">
+            <button id="connect">Connect</button>
         </div>
-        <span id="received-message" class="placeholder">Waiting for message...</span>
-    </div>
-    <script src="main.js"></script>
-</body>
+
+        <div id="terminal">
+            <div>
+                <input type="text" id="message-input" />
+                <button id="send">Send message</button>
+            </div>
+            <span id="received-message" class="placeholder"
+                >Waiting for message...</span
+            >
+        </div>
+
+        <div id="buttons">
+            <button id="forward">Forward</button>
+            <button id="right">Right</button>
+            <button id="backward">Backward</button>
+            <button id="left">Left</button>
+        </div>
+
+        <div><span id="message">Last sent message:</span></div>
+        <script src="main.js"></script>
+    </body>
 </html>
